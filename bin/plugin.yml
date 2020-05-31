@@ -1,0 +1,8 @@
+name: SBAddon
+version: 1.0
+author: furkanschaefer
+description: ScoreboardAddon for ASG
+main: scha.efer.sbaddon.Main
+commands:
+  scoreboardaddon:
+    aliases: [sbaddon, sidebar]

@@ -1,0 +1,172 @@
+# AdvancedSurvivalGames Editable Scoreboard Addon
+# by CrispyBow
+# AdvancedSurvivalGames: https://www.spigotmc.org/resources/advancedsurvivalgames-teams-solo-games-xmas-sale-20-8%CC%B6-%CC%B69%CC%B69%CC%B6.5715/
+
+ASG-Version: 3.1.2
+license-key: 69M9-ZLXP-136S-4QPT
+
+Messages:
+  Prefix: '&8[&6SG&8] &r'
+  ReloadConfig: '&aThe config has been reloaded.'
+  NotPermission: '&cYou do not have permission for this command!'
+  SidebarMinimize: '&aSidebar has been minimized.'
+  SidebarMaximize: '&aSidebar has been maximized.'
+  SidebarUsage:
+  - '&8[&6SG&8] &7ScoreboardAddon Commands&8:'
+  - '&8- &7/sbaddon reload'
+  - '&8- &7/sbaddon help'
+
+# Placeholders List:
+
+# %online% = Show online players size
+# %playing% = Show Alive Players Size
+# %watching% = Show Spectators Size
+# %winner% = Winner player
+# %rank% = GroupManager / Pex Rank
+# %bounty% = Your bounty
+# %map% = Map name
+# %stage% = Stage name
+# %date% = Show Date
+# %time% = Show Time Format
+# %time2% = Show Time Format 2
+# %player_name% = Show the player name
+# %player_displayname% = Show player displayname
+# %ping% = Show your ping
+# %game_time% = Show game time
+
+# Scoreboard list
+Scoreboard:
+  update-ticks: 20
+  date-format: dd MMM yyy
+  time-format: HH:mm z
+  time-format2: 'dd.MM KK:mm'
+  LOBBY:
+    enabled: true
+    title: '&bLobby &a%game_time%'
+    lines:
+    - '&7%arrow%&f You'
+    - '&f%player%'
+    - '&c '
+    - '&7%arrow%&f Time'
+    - '&e%date%'
+    - '&e%time%'
+    - '&7%time2%'
+    - '&0&l '
+    - '&7%arrow%&f Server'
+    - '&6EU&8: &e1651'
+    - '&a&l '
+    - '&7%arrow%&f Players'
+    - '&fOnline: %online%'
+    - '&bwww.crispymc.tk'
+  PREGAME:
+    enabled: true
+    title: '&bPreGame &a%game_time%'
+    lines:
+    - '&7%arrow%&f You'
+    - '&f%player%'
+    - ' '
+    - '&7%arrow%&f Time'
+    - '&e%date%'
+    - '&e%time%'
+    - '&7%time2%'
+    - ' '
+    - '&7%arrow%&f Server'
+    - '&6EU&8: &e1651'
+    - ' '
+    - '&7%arrow%&f Players'
+    - '&fPlaying: %playing%'
+    - '&fWatching: %watching%'
+    - '&bwww.crispymc.tk'
+  LIVEGAME:
+    enabled: true
+    title: '&bLiveGame &a%game_time%'
+    lines:
+    - '&7%arrow%&f You'
+    - '&f%player%'
+    - ' '
+    - '&7%arrow%&f Time'
+    - '&e%date%'
+    - '&e%time%'
+    - '&7%time2%'
+    - ' '
+    - '&7%arrow%&f Server'
+    - '&6EU&8: &e1651'
+    - ' '
+    - '&7%arrow%&f Players'
+    - '&fPlaying: %playing%'
+    - '&fWatching: %watching%'
+    - '&bwww.crispymc.tk'
+  PREDEATHMATCH:
+    enabled: true
+    title: '&bPreDeathMatch &a%game_time%'
+    lines:
+    - '&7%arrow%&f You'
+    - '&f%player%'
+    - ' '
+    - '&7%arrow%&f Time'
+    - '&e%date%'
+    - '&e%time%'
+    - '&7%time2%'
+    - ' '
+    - '&7%arrow%&f Server'
+    - '&6EU&8: &e1651'
+    - ' '
+    - '&7%arrow%&f Players'
+    - '&fPlaying: %playing%'
+    - '&fWatching: %watching%'
+    - '&bwww.crispymc.tk'
+  DEATHMATCH:
+    enabled: true
+    title: '&bDeathMatch &a%game_time%'
+    lines:
+    - '&7%arrow%&f You'
+    - '&f%player%'
+    - ' '
+    - '&7%arrow%&f Time'
+    - '&e%date%'
+    - '&e%time%'
+    - '&7%time2%'
+    - ' '
+    - '&7%arrow%&f Server'
+    - '&6EU&8: &e1651'
+    - ' '
+    - '&7%arrow%&f Players'
+    - '&fPlaying: %playing%'
+    - '&fWatching: %watching%'
+    - '&bwww.crispymc.tk'
+  CLEANUP:
+    enabled: true
+    title: '&bCleanUp &a%game_time%'
+    lines:
+    - '&7%arrow%&f You'
+    - '&f%player%'
+    - ' '
+    - '&7%arrow%&f Time'
+    - '&e%date%'
+    - '&e%time%'
+    - '&7%time2%'
+    - ' '
+    - '&7%arrow%&f Server'
+    - '&6EU&8: &e1651'
+    - ' '
+    - '&7%arrow%&f Winner'
+    - '&a%winner%'
+    - '&bwww.crispymc.tk'
+  RESTARTING:
+    enabled: true
+    title: '&bRestarting &a%game_time%'
+    lines:
+    - '&7%arrow%&f You'
+    - '&f%player%'
+    - ' '
+    - '&7%arrow%&f Time'
+    - '&e%date%'
+    - '&e%time%'
+    - '&7%time2%'
+    - ' '
+    - '&7%arrow%&f Server'
+    - '&6EU&8: &e1651'
+    - ' '
+    - '&7%arrow%&f Winner'
+    - '&a%winner%'
+    - '&bwww.crispymc.tk'
